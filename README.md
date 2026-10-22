@@ -39,15 +39,13 @@ before connecting agents to real business systems.
 
 ## Installation
 
-Requires Python 3.10 or later.
+Requires Python 3.10 or newer.
 
-Clone the repository and install:
+pip install agentdrill
 
-    git clone https://github.com/agentdrillhq/agentdrill.git
-    cd agentdrill
-    python -m pip install -e .
+Available on PyPI: https://pypi.org/project/agentdrill/
 
-The repository URL will be updated after the GitHub repository is created.
+Source code: https://github.com/agentdrillhq/agentdrill
 
 ## Quick Start
 
