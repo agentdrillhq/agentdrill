@@ -1,0 +1,53 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+agentdrill-test-env/
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# API credentials
+*.pem
+*.key
+
+# Generated reports
+reports/
+agentdrill_*report.json
+agentdrill_*benchmark.json
+agentdrill_analysis.json
+agentdrill_custom_report.json
+agentdrill_unified_report.json
+agentdrill_traced_attacks.json
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+agentdrill_report.md
+inspect_misses.py
+run_test.py
+custom_agent.py

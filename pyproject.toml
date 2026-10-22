@@ -1,0 +1,57 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentdrill"
+version = "0.7.0"
+description = "Test what your AI agent actually changes, not just what it says."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    {name = "AgentDrill Contributors"}
+]
+keywords = [
+    "ai-agents",
+    "agent-testing",
+    "evaluation",
+    "tool-calling",
+    "state-verification"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Testing"
+]
+
+[project.optional-dependencies]
+openai = ["openai"]
+
+[project.scripts]
+agentdrill = "agentdrill_cli:main"
+
+[tool.setuptools]
+py-modules = [
+    "agentdrill_api",
+    "agentdrill_sdk",
+    "agentdrill_cli"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+    "agentdrill*",
+    "core*",
+    "scenarios*",
+    "world*",
+    "invariants*",
+    "agents*"
+]
+exclude = [
+    "tests*",
+    "examples*"
+]
+namespaces = true
